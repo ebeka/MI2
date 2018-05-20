@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="java.js"></script>
+    <script src="jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div id="intro">
+        <p>Are you ready to play hangman?</p>
+        <button id="StartSpel" type="button">Start game</button>
+    </div>
+    <div id="game">
+        <h2>Hangman!</h2>
+        <h3>Guess the European Country!</h3>
+        <br>
+        <div id="alphabetPart1">
+            <div id="mobileAlpabetPart1">
+                <button id="A">A</button>
+                <button id="B">B</button>
+                <button id="C">C</button>
+                <button id="D">D</button>
+                <button id="E">E</button>
+                <button id="F">F</button>
+                <button id="G">G</button>
+            </div>
+            <div id="mobileAlpabetPart2">
+                <button id="H">H</button>
+                <button id="I">I</button>
+                <button id="J">J</button>
+                <button id="K">K</button>
+                <button id="L">L</button>
+                <button id="M">M</button>
+            </div>
+        </div>
+        <br>
+        <div id="alphabetPart2">
+            <div id="mobileAlpabetPart3">
+                <button id="N">N</button>
+                <button id="O">O</button>
+                <button id="P">P</button>
+                <button id="Q">Q</button>
+                <button id="R">R</button>
+                <button id="S">S</button>
+                <button id="T">T</button>
+            </div>
+            <div id="mobileAlpabetPart4">
+                <button id="U">U</button>
+                <button id="V">V</button>
+                <button id="W">W</button>
+                <button id="X">X</button>
+                <button id="Y">Y</button>
+                <button id="Z">Z</button>
+            </div>
+        </div>
+
+        <div id="aantalStreepjesWoord"></div>
+        <br>
+        <div id="score"></div>
+        <div id="hangman"> <img src="fotos/balkBeneden.jpg" id="fotoBalkBeneden"> <img src="fotos/balkVerticaal.jpg" id="fotoBalkVerticaal"> <img src="fotos/schuineBalk.jpg" id="fotoSchuineBalk"> <img src="fotos/balkBoven.jpg" id="fotoBalkBoven"> <img src="fotos/kleineBalkBoven.jpg" id="fotoKleineBalkBoven"> <img src="fotos/hoofd.jpg" id="fotoHoofd"> <img src="fotos/torso.jpg" id="fotoTorso"> <img src="fotos/linkerArm.jpg" id="fotoLinkerArm"> <img src="fotos/rechterArm.jpg" id="fotoRechterArm"> <img src="fotos/linkerBeen.jpg" id="fotoLinkerBeen"> <img src="fotos/rechterBeen.jpg" id="fotoRechterBeen"> </div>
+    </div>
+    <div id="gewonnen">
+        <p>Congratulations
+            <br> You have guessed the word.</p>
+        <p>Do you want to try again?</p>
+        <button id="SpeelOpnieuw" type="button">Start game</button>
+    </div>
+    <div id="verloren">
+        <p>Game over!
+            <br> Do you want to try again?</p>
+        <button id="Restart" type="button">Restart</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,306 @@
+body {
+    background-color: #006699;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, verdana, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: Arial, verdana, sans-serif;
+}
+
+#game {
+    height: 70vh;
+    width: 70vw;
+    border: 1px solid black;
+    margin-left: calc(18vw - 50px);
+    margin-top: 10vh;
+    background-color: #9999ff;
+}
+
+#alphabetPart1 {
+    text-align: center;
+}
+
+#alphabetPart2 {
+    text-align: center;
+}
+
+#intro,
+#verloren {
+    font-family: Arial, verdana, sans-serif;
+    width: 20vw;
+    height: 20vh;
+    padding: 1%;
+    margin-left: calc(42vw - 50px);
+    text-align: center;
+    font-size: 20px;
+    background: #666699;
+    position: absolute;
+    -webkit-animation: beweegDiv 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation: beweegDiv 2s;
+    animation-fill-mode: forwards;
+}
+
+#gewonnen {
+    font-family: Arial, verdana, sans-serif;
+    width: 25vw;
+    height: 25vh;
+    padding: 1%;
+    margin-left: calc(42vw - 50px);
+    text-align: center;
+    font-size: 20px;
+    background: #666699;
+    position: absolute;
+    -webkit-animation: beweegDiv 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation: beweegDiv 2s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes beweegDiv {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 30vh;
+    }
+}
+
+@keyframes beweegDiv {
+    from {
+        top: 0px;
+    }
+    to {
+        top: 30vh;
+    }
+}
+
+#StartSpel,
+#SpeelOpnieuw,
+#Restart {
+    background-color: #660066;
+    border: none;
+    color: white;
+    padding: 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#A,
+#B,
+#C,
+#D,
+#E,
+#F,
+#G,
+#H,
+#I,
+#J,
+#K,
+#L,
+#M,
+#N,
+#O,
+#P,
+#Q,
+#R,
+#S,
+#T,
+#U,
+#V,
+#W,
+#X,
+#Y,
+#Z {
+    background-color: #006699;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+#aantalStreepjesWoord {
+    border-bottom-color: black;
+    margin-left: 2%;
+}
+
+.streepje {
+    border-bottom: 1px solid black;
+    width: 4%;
+    margin-right: 8px;
+    margin-left: 8px;
+    text-align: center;
+    float: left;
+    margin-top: 100px;
+}
+
+#fotoBalkBeneden,
+#fotoBalkVerticaal,
+#fotoSchuineBalk,
+#fotoBalkBoven,
+#fotoKleineBalkBoven,
+#fotoHoofd,
+#fotoTorso,
+#fotoLinkerArm,
+#fotoRechterArm,
+#fotoLinkerBeen,
+#fotoRechterBeen {
+    float: right;
+}
+
+#fotoBalkBeneden {
+    margin-top: calc(25vh - 50px);
+    margin-right: calc(5vw - 50px);
+}
+
+#fotoBalkVerticaal {
+    margin-top: calc(-1.7vh - 50px);
+    margin-right: calc(-10vw - 50px);
+}
+
+#fotoSchuineBalk {
+    margin-top: calc(-11.5vh - 50px);
+    margin-right: calc(-17vw - 50px);
+}
+
+#fotoBalkBoven {
+    margin-top: calc(-12.5vh - 50px);
+    margin-right: calc(-21vw - 50px);
+}
+
+#fotoKleineBalkBoven {
+    margin-top: calc(-12.3vh - 50px);
+    margin-right: calc(-22vw - 50px);
+}
+
+#fotoHoofd {
+    margin-top: calc(-3.6vh - 50px);
+    margin-right: calc(-21vw - 50px);
+}
+
+#fotoTorso {
+    margin-top: calc(-0.5vh - 50px);
+    margin-right: calc(-21.5vw - 50px);
+    height: 30vh;
+}
+
+#fotoLinkerArm {
+    margin-top: calc(1vh - 50px);
+    margin-right: calc(-20.5vw - 50px);
+}
+
+#fotoRechterArm {
+    margin-top: calc(-4vh - 50px);
+    margin-right: calc(-20vw - 50px);
+}
+
+#fotoRechterBeen {
+    margin-top: calc(9vh - 50px);
+    margin-right: calc(-22vw - 50px);
+}
+
+#fotoLinkerBeen {
+    margin-top: calc(9vh - 50px);
+    margin-right: calc(-21.2vw - 50px);
+    width: 11vw;
+}
+
+@media screen and (max-width: 600px) {
+    #mobileAlpabetPart1,
+    #mobileAlpabetPart2,
+    #mobileAlpabetPart3,
+    #mobileAlpabetPart4 {
+        text-align: center;
+    }
+    #mobileAlpabetPart1 + #mobileAlpabetPart2 {
+        margin-top: 2vh;
+    }
+    #mobileAlpabetPart3 + #mobileAlpabetPart4 {
+        margin-top: 2vh;
+    }
+    #intro,
+    #verloren {
+        width: 55vw;
+        height: 18vh;
+        margin-left: calc(35vw - 50px);
+    }
+    #gewonnen {
+        width: 55vw;
+        height: 26vh;
+        margin-left: calc(35vw - 50px);
+    }
+    #game {
+        width: 76vw;
+        border: 1px solid black;
+        margin-left: calc(22vw - 50px);
+        margin-top: calc(20vh - 50px);
+    }
+    #fotoBalkBeneden {
+        margin-top: calc(70vh - 50px);
+        margin-right: calc(15vw - 50px);
+    }
+
+    #fotoBalkVerticaal {
+        margin-top: calc(-40vh - 50px);
+        margin-right: calc(48vw - 50px);
+    }
+
+    #fotoSchuineBalk {
+        margin-top: calc(-55vh - 50px);
+        margin-right: calc(23vw - 50px);
+    }
+
+    #fotoBalkBoven {
+        margin-top: calc(-55vh - 50px);
+        margin-right: calc(-2vw - 50px);
+    }
+
+    #fotoKleineBalkBoven {
+        margin-top: calc(-54vh - 50px);
+        margin-right: calc(-4vw - 50px);
+    }
+
+    #fotoHoofd {
+        margin-top: calc(-44vh - 50px);
+        margin-right: calc(0vw - 50px);
+    }
+
+    #fotoTorso {
+        margin-top: calc(-38vh - 50px);
+        margin-right: calc(0.2vw - 50px);
+        height: 30vh;
+    }
+
+    #fotoLinkerArm {
+        margin-top: calc(-40vh - 50px);
+        margin-right: calc(0.7vw - 50px);
+    }
+
+    #fotoRechterArm {
+        margin-top: calc(-45.5vh - 50px);
+        margin-right: calc(2.5vw - 50px);
+    }
+
+    #fotoRechterBeen {
+        margin-top: calc(-30vh - 50px);
+        margin-right: calc(-4.5vw - 50px);
+    }
+
+    #fotoLinkerBeen {
+        margin-top: calc(-18.9vh - 50px);
+        margin-right: calc(18vw - 50px);
+        width: 11vw;
+    }
+}
